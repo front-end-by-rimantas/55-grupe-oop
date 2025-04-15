@@ -32,14 +32,22 @@ console.log(Matematika.skirtumas(7, 5));
 console.log(Matematika.sandauga(7, 5));
 
 class Tekstas {
-    static pirmaRaide(text) {
+    static pirmaRaide(text = '') {
         return text[0];
     }
 
-    static zodziuKiekis(text) {
+    static zodziuKiekis(text = '') {
         return text.split(' ').length;
     }
 }
 
 console.log(Tekstas.pirmaRaide('Labas'));
 console.log(Tekstas.zodziuKiekis('Labas rytas'));
+
+function multiply(a = 1, b = 1) {
+    return a * b;
+}
+
+console.log(multiply(7, 5));
+console.log(multiply(7));
+console.log(multiply());
