@@ -1,9 +1,9 @@
 import { Pet } from "./Pet.js";
 
-export class Dog extends Pet {
+export class Hamster extends Pet {
     constructor(name, furColor) {
         super(name, furColor);
-        this.sound = 'au';
-        this.emoji = '🐕';
+        this.sound = 'krimst';
+        this.emoji = '🐹';
     }
 }
